@@ -2,4 +2,4 @@ version: 0.1
 phases:
   post_build:
     commands:
-      - aws s3 sync --delete --exclude * --include *.html --include *.css --include *.jpg . "s3://aws-website-celestialsoftware-f528z"
+      - aws s3 sync --delete --exclude "*" --include "*.html" --include "*.css" --include "*.jpg" . "s3://aws-website-celestialsoftware-f528z"
